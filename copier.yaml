@@ -5,6 +5,7 @@ project_name:
 
 module_name:
     type: str
+    default: "{{ project_name | slugify }}"
     help: What is your Python module name?
 
 fav_number:
