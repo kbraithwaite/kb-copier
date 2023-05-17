@@ -5,7 +5,7 @@ project_name:
 
 module_name:
     type: str
-    default: "{{ project_name | slugify }}"
+    default: "{{ project_name | lower | replace(' ', '_') | replace('-', '_') }}"
     help: What is your Python module name?
 
 fav_number:
